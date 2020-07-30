@@ -1,0 +1,12 @@
+## HBase 配置
+hbase:
+  config:
+    hbase:
+      zookeeper:
+        quorum: 10.0.1.109
+        port: 2181
+        znode: /hadoop/data_ha
+      master: 10.0.1.109:16000
+      client:
+        keyvalue:
+          maxsize: 1572864000
